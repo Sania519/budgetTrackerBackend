@@ -17,7 +17,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // Initialize database
-const dbPath = path.join(__dirname, 'database', 'database.db');
+const dbPath = './database.db'
 const db = new sqlite3.Database(dbPath);
 
 db.serialize(() => {
